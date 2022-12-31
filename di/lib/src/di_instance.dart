@@ -4,6 +4,6 @@ import 'package:data/data.dart' as data;
 import 'package:get_it/get_it.dart';
 
 void configureDependencies(GetIt diInstance) {
-  core.configureDependencies(diInstance);
   data.configureDependencies(diInstance);
+  core.configureDependencies(diInstance);
 }
