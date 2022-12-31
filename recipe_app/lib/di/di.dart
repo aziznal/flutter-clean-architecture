@@ -12,6 +12,8 @@ final diInstance = GetIt.instance;
   asExtension: false,
 )  
 void configureDependencies() {
+  print("configuring app dependencies... 🛠️");
+
   init(diInstance);
   di.configureDependencies(diInstance);
 }
