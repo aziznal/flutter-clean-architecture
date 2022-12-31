@@ -3,9 +3,7 @@ import 'package:data/data.dart' as data;
 
 import 'package:get_it/get_it.dart';
 
-final diInstance = GetIt.instance;  
-
-void configureDependencies() {
+void configureDependencies(GetIt diInstance) {
   core.configureDependencies(diInstance);
   data.configureDependencies(diInstance);
 }

@@ -1,1 +1,1 @@
-export './src/di_instance.dart' show diInstance, configureDependencies;
+export './src/di_instance.dart' show configureDependencies;
