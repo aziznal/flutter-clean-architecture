@@ -1,13 +1,11 @@
+import 'package:core/core.dart' as core;
+import 'package:data/data.dart' as data;
+
 import 'package:get_it/get_it.dart';
 
-import 'package:injectable/injectable.dart';
-
-import './di_instance.config.dart';
-
 final diInstance = GetIt.instance;  
-  
-@InjectableInit(  
-  initializerName: 'init',
-  preferRelativeImports: true,
-)  
-void configureDependencies() => init(diInstance);  
+
+void configureDependencies() {
+  core.configureDependencies(diInstance);
+  data.configureDependencies(diInstance);
+}

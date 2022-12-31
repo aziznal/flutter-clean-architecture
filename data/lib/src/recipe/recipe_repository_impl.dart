@@ -1,7 +1,9 @@
 import 'package:core/core.dart';
+import 'package:injectable/injectable.dart';
 import './data_sources/local/recipe_local_data_source.dart';
 import './data_sources/remote/recipe_remote_data_source.dart';
 
+@Injectable(as: RecipeRepository)
 class RecipeRepositoryImpl implements RecipeRepository {
   RecipeRepositoryImpl(this._localDataSource, this._remoteDataSource);
 

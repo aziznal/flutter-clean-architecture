@@ -120,6 +120,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "3.1.0"
+  core:
+    dependency: "direct main"
+    description:
+      path: "../core"
+      relative: true
+    source: path
+    version: "1.0.0"
   coverage:
     dependency: transitive
     description:
@@ -141,6 +148,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.2.4"
+  data:
+    dependency: "direct main"
+    description:
+      path: "../data"
+      relative: true
+    source: path
+    version: "1.0.0"
   file:
     dependency: transitive
     description:
